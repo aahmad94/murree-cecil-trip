@@ -9,6 +9,13 @@
   h1 { color: #1a365d; border-bottom: 3px solid #2b6cb0; padding-bottom: 8px; }
   h2 { color: #2c5282; margin-top: 1.4em; }
   h3 { color: #2d3748; margin-top: 1em; }
+  .section-header { display: flex; justify-content: space-between; align-items: baseline; margin-top: 1.4em; }
+  .section-header h2 { margin: 0; }
+  .back-to-top { font-size: 0.85em; text-decoration: none; color: #3182ce; }
+  .back-to-top:hover { text-decoration: underline; }
+  .nav { background: #edf2f7; padding: 12px 16px; border-radius: 8px; margin: 16px 0; }
+  .nav a { margin-right: 16px; color: #2b6cb0; text-decoration: none; }
+  .nav a:hover { text-decoration: underline; }
   .highlight { background: #ebf8ff; padding: 12px; border-left: 4px solid #3182ce; border-radius: 4px; margin: 12px 0; }
   table { width: 100%; border-collapse: collapse; margin: 12px 0; }
   th, td { border: 1px solid #cbd5e0; padding: 8px 10px; text-align: left; vertical-align: top; }
@@ -19,13 +26,22 @@
   img { max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0; display: block; }
   .gallery { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0; }
   .gallery img { max-width: 48%; flex: 1 1 300px; }
-  .urdu { direction: rtl; font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif; text-align: right; }
-  @media print { body { background: white; } .day { box-shadow: none; border: 1px solid #ddd; } }
+  @media print { body { background: white; } .day { box-shadow: none; border: 1px solid #ddd; } .nav { display: none; } }
 </style>
 </head>
 <body>
 
-<h1>Nathia Gali Trip Itinerary</h1>
+<h1 id="top">Nathia Gali Trip Itinerary</h1>
+
+<div class="nav">
+<strong>Jump to:</strong>
+<a href="#itinerary">Day-by-Day</a>
+<a href="#attractions">Trails & Cafes</a>
+<a href="#food">Food & Menu</a>
+<a href="#shopping">Shopping List</a>
+<a href="#roman">Roman Urdu Menu</a>
+</div>
+
 <p><strong>Stay:</strong> The Forest Retreat, Kalabagh (Airbnb, ~10–15 min drive from Nathia Gali bazaar toward Kalabagh Air Force Camp / forest road)<br>
 <strong>Dates:</strong> 23–28 November 2026<br>
 <strong>Group:</strong> 6 people (you, fiancée, mom, her sister, two cousins) — two cars from Lahore<br>
@@ -37,7 +53,7 @@
 <strong>Stay note:</strong> Serviced apartment with a large terrace offering 180° mountain and valley views (visible landmarks include Miranjani peak, the colonial-era Governor’s House in Nathia Gali, and on clear days Kashmir peaks). Includes heating, hot water, WiFi + solar backup, on-site staff (housekeeper + cook available at nominal charge), and private entertainment lounge (projector cinema, pool table, table tennis, PS4). Confirm pet policy for Bruno directly with the host before arrival. Families only.
 </div>
 
-<h2>Weather Expectation (Late November)</h2>
+<div class="section-header"><h2>Weather Expectation (Late November)</h2><a class="back-to-top" href="#top">↑ Top</a></div>
 <ul>
 <li>Daytime highs: roughly 8–14°C (46–57°F)</li>
 <li>Nighttime lows: -2–5°C (28–41°F), colder with wind</li>
@@ -46,12 +62,12 @@
 <li>Altitude ~2,400 m — hydrate and take it easy the first day</li>
 </ul>
 
-<h2>Travel from Lahore (Day 1)</h2>
+<div class="section-header"><h2>Travel from Lahore (Day 1)</h2><a class="back-to-top" href="#top">↑ Top</a></div>
 <p><strong>Sunset on 23 Nov:</strong> ~4:58 PM in Nathia Gali. It gets properly dark in the hills shortly after 5 PM.</p>
 <p><strong>Driving time:</strong> 6–7 hours under normal conditions (Motorway M-2 toward Islamabad, then Galyat road; final mountain stretch is slower).</p>
 <p class="note"><strong>Recommended:</strong> Leave Lahore by <strong>8:00–8:30 AM</strong> to arrive by early-to-mid afternoon with full daylight buffer. 9:00 AM is still workable but tighter if there are stops or traffic.</p>
 
-<h2>Nearby Attractions, Trails & Cafes</h2>
+<div class="section-header" id="attractions"><h2>Nearby Attractions, Trails & Cafes</h2><a class="back-to-top" href="#top">↑ Top</a></div>
 <p>All within a short drive from the Forest Retreat. Ayubia chairlift has been out of commission for several years (as of late 2026) — skip it.</p>
 
 <h3>Easy / Family-Friendly</h3>
@@ -80,7 +96,7 @@
 <img src="https://bivwackoutdoors.com/wp-content/uploads/muskkpuri-top-mountain.jpg" alt="Snowy mountain ridges">
 </div>
 
-<h2>Packing List (Brief)</h2>
+<div class="section-header"><h2>Packing List (Brief)</h2><a class="back-to-top" href="#top">↑ Top</a></div>
 <ul>
 <li>Layers: thermal/base layer, fleece or wool sweater, waterproof/windproof jacket</li>
 <li>Warm trousers, sturdy closed shoes with good grip</li>
@@ -90,7 +106,7 @@
 <li>Snacks and water for the drive; check road status before departure</li>
 </ul>
 
-<h2>5-Day Itinerary</h2>
+<div class="section-header" id="itinerary"><h2>5-Day Itinerary</h2><a class="back-to-top" href="#top">↑ Top</a></div>
 
 <div class="day">
 <h3>Day 1 — Mon 23 Nov: Travel & Arrival</h3>
@@ -149,7 +165,7 @@
 </ul>
 </div>
 
-<h2>Practical Notes</h2>
+<div class="section-header"><h2>Practical Notes</h2><a class="back-to-top" href="#top">↑ Top</a></div>
 <ul>
 <li>Two cars give flexibility for trail vs rest splits.</li>
 <li>Confirm pet policy and any cook/grocery requests with the host in advance.</li>
@@ -160,7 +176,7 @@
 
 <hr>
 
-<h2>Food & Menu Plan (for Housekeeper + Chef)</h2>
+<div class="section-header" id="food"><h2>Food & Menu Plan (for Housekeeper + Chef)</h2><a class="back-to-top" href="#top">↑ Top</a></div>
 <p class="note">Housekeeper does all groceries. Chef cooks whatever we request. Chai every morning. Fresh juice if available. We arrive 23 Nov (dinner only) and leave 28 Nov (breakfast only).</p>
 
 <div class="highlight">
@@ -179,7 +195,7 @@
 <tr>
 <td><strong>Mon 23 Nov</strong><br>(Arrival)</td>
 <td>—</td>
-<td>Simple chicken curry or roast chicken + naan/rice (easy arrival meal)</td>
+<td>Tandoori chicken + Matar tawa (peas on tawa) + naan</td>
 </tr>
 <tr>
 <td><strong>Tue 24 Nov</strong></td>
@@ -208,14 +224,14 @@
 </tr>
 </table>
 
-<h3>Housekeeper Shopping List (please get these)</h3>
+<div class="section-header" id="shopping"><h2>Housekeeper Shopping List</h2><a class="back-to-top" href="#top">↑ Top</a></div>
 <ul>
 <li><strong>Daily staples:</strong> Eggs (at least 3–4 dozen), milk (for chai — enough for 5 days), yogurt (plain)</li>
-<li><strong>Chicken:</strong> Desi / organic chicken (whole or pieces) for pasta, curry, and BBQ — plus a little extra to boil for the puppy</li>
+<li><strong>Chicken:</strong> Desi / organic chicken (whole or pieces) for tandoori, pasta, curry, and BBQ — plus a little extra to boil for the puppy</li>
 <li><strong>For breakfasts:</strong> Naan / ready puri or ingredients for puri, chana (chickpeas — dried or canned), cheese for omelettes</li>
 <li><strong>For Alfredo pasta:</strong> Pasta, cream or milk + butter, garlic, onions, black pepper, Parmesan if available (or local cheese)</li>
 <li><strong>For BBQ nights:</strong> Yogurt, ginger-garlic paste, spices (red chilli, turmeric, garam masala, cumin), lemons, onions, green chillies, skewers if needed</li>
-<li><strong>Vegetables & basics:</strong> Onions, tomatoes, potatoes, garlic, ginger, green chillies, fresh coriander, salt, basic spices</li>
+<li><strong>Vegetables & basics:</strong> Onions, tomatoes, potatoes, peas (matar), garlic, ginger, green chillies, fresh coriander, salt, basic spices</li>
 <li><strong>For Bruno (puppy):</strong> Extra eggs + some chicken to boil (plain)</li>
 <li><strong>Extras if available:</strong> Fresh juice (oranges / seasonal fruit), fruit for snacking, any local vegetables that look good</li>
 </ul>
@@ -224,65 +240,65 @@
 
 <hr>
 
-<h2 class="urdu">خوراک اور مینو (ہاؤس کیپر اور شیف کے لیے)</h2>
+<div class="section-header" id="roman"><h2>Roman Urdu – Khorak aur Menu (Housekeeper aur Chef ke liye)</h2><a class="back-to-top" href="#top">↑ Top</a></div>
 
-<div class="highlight urdu">
-<strong>ہم لا رہے ہیں:</strong><br>
-• مٹن (1–2 خانے کے لیے)<br>
-• بیف (1–2 خانے کے لیے)<br>
-• کچھ چکن بریسٹ (گوشٹ کے لیے اور برونو کتے کے لیے بولنے کے لیے)<br>
-• ٹوسٹ / بریڈ<br>
-• عام اولیو آئل (اکسٹرا ورجن نہیں) — ناشتے کے لیے<br>
-• دیسی گھی — سب ہائی ہیٹ کہانے کے لیے
+<div class="highlight">
+<strong>Hum laa rahe hain:</strong><br>
+• Mutton (1–2 khane ke liye)<br>
+• Beef (1–2 khane ke liye)<br>
+• Kuch chicken breast (gosht ke liye aur Bruno kutte ke liye boil karne ke liye)<br>
+• Toast / bread<br>
+• Aam olive oil (extra virgin nahi) — nashtay ke liye<br>
+• Desi ghee — sab high heat khane ke liye
 </div>
 
-<h3 class="urdu">روزانہ مینو</h3>
-<table class="urdu">
-<tr><th>تاریخ</th><th>ناشتہ</th><th>دنر</th></tr>
+<h3>Rozana Menu</h3>
+<table>
+<tr><th>Tareekh</th><th>Nashta</th><th>Dinner</th></tr>
 <tr>
-<td><strong>پیر 23 نومبر</strong><br>(پہنچنا)</td>
+<td><strong>Peer 23 November</strong><br>(Pahunchna)</td>
 <td>—</td>
-<td>سادہ چکن کری یا روسٹ چکن + نان/چاول</td>
+<td>Tandoori chicken + Matar tawa + naan</td>
 </tr>
 <tr>
-<td><strong>منگل 24 نومبر</strong></td>
-<td>چنے + انڈے کے ساتھ نان یا پوری<br>+ چائے + دہی + جوس اگر ملے</td>
-<td>الفریڈو پاسٹا (دیسی چکن کے ساتھ) + گارلک بریڈ</td>
+<td><strong>Mangal 24 November</strong></td>
+<td>Chane + ande ke sath naan ya puri<br>+ chai + dahi + juice agar mile</td>
+<td>Alfredo pasta (desi chicken ke sath) + garlic bread</td>
 </tr>
 <tr>
-<td><strong>بدھ 25 نومبر</strong></td>
-<td>دیسی آملیٹ یا چیز آملیٹ<br>+ چائے</td>
-<td>آؤٹ ڈور باربیکیو: ملائی بوٹی + چکن ٹکہ/تھائی + بیف سکیورز</td>
+<td><strong>Budh 25 November</strong></td>
+<td>Desi omelette ya cheese omelette<br>+ chai</td>
+<td>Outdoor barbecue: Malai boti + chicken tikka/thigh + beef skewers</td>
 </tr>
 <tr>
-<td><strong>جمعرات 26 نومبر</strong></td>
-<td>بالے انڈے (سافٹ یوک) + دہی<br>+ چائے</td>
-<td>آلو قیمہ (مٹن سے) + نان</td>
+<td><strong>Jumeraat 26 November</strong></td>
+<td>Boiled ande (soft yolk) + dahi<br>+ chai</td>
+<td>Aloo keema (mutton se) + naan</td>
 </tr>
 <tr>
-<td><strong>جمعہ 27 نومبر</strong></td>
-<td>فرائیڈ اگس + ٹوسٹ<br>+ چائے</td>
-<td>بھنا گوشت + گارلک نان (باقی مٹن سے) یا دوسرا باربیکیو</td>
+<td><strong>Jumma 27 November</strong></td>
+<td>Fried eggs + toast<br>+ chai</td>
+<td>Bhuna gosht + garlic naan (baqi mutton se) ya doosra barbecue</td>
 </tr>
 <tr>
-<td><strong>ہفتہ 28 نومبر</strong><br>(روانگی)</td>
-<td>سادہ فرائیڈ اگس / آملیٹ + ٹوسٹ + چائے</td>
+<td><strong>Hafta 28 November</strong><br>(Rawangi)</td>
+<td>Sada fried eggs / omelette + toast + chai</td>
 <td>—</td>
 </tr>
 </table>
 
-<h3 class="urdu">ہاؤس کیپر کے لیے شاپنگ لسٹ</h3>
-<ul class="urdu">
-<li>انڈے (3–4 ڈزن کم از کم)، دودھ (چائے کے لیے 5 دن)، دہی</li>
-<li>دیسی / آرگینک چکن (پاسٹا، کری اور باربیکیو کے لیے) + برونو کتے کے لیے اضافی</li>
-<li>نان / پوری یا پوری کے اجزا، چنے، چیز</li>
-<li>پاسٹا، کریم یا دودھ + مکھن، لہسن، پیاز</li>
-<li>باربیکیو کے لیے: دہی، ادرک لہسن، مسالے، نیمو، پیاز، ہری مرچ</li>
-<li>سبزیاں: پیاز، ٹماٹر، آلو، لہسن، ادرک، ہری مرچ، دھنیا، نمک، مسالے</li>
-<li>برونو کتے کے لیے اضافی انڈے + چکن بولنے کے لیے</li>
+<h3>Housekeeper ke liye Shopping List</h3>
+<ul>
+<li>Ande (3–4 dozen kam az kam), doodh (chai ke liye 5 din), dahi</li>
+<li>Desi / organic chicken (tandoori, pasta, curry aur barbecue ke liye) + Bruno kutte ke liye extra</li>
+<li>Naan / puri ya puri ke ajza, chane, cheese</li>
+<li>Pasta, cream ya doodh + makhan, lehsan, pyaaz</li>
+<li>Barbecue ke liye: dahi, adrak lehsan, masale, nimbu, pyaaz, hari mirch</li>
+<li>Sabziyan: pyaaz, tamatar, aloo, matar, lehsan, adrak, hari mirch, dhania, namak, masale</li>
+<li>Bruno kutte ke liye extra ande + chicken boil karne ke liye</li>
 </ul>
 
-<p class="note urdu">ہم عام اولیو آئل ناشتے کے لیے لا رہے ہیں، اور دیسی گھی سب ہائی ہیٹ کہانے کے لیے۔ ضرورت پڑے تو عام کہانے کا تیل بھی لے سکتے ہیں۔</p>
+<p class="note">Hum aam olive oil nashtay ke liye laa rahe hain, aur desi ghee sab high heat khane ke liye. Zaroorat pare to aam khane ka tel bhi le sakte hain.</p>
 
 <p style="margin-top: 30px; font-size: 0.85em; color: #718096;">Prepared for Adeel’s group | Forest Retreat Kalabagh / Nathia Gali | Nov 2026</p>
 
